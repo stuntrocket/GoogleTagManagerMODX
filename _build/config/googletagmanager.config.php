@@ -22,7 +22,7 @@ $components = array(
     'email' => 'hello@stuntrocket.co',
     'authorUrl' => 'https://stuntrocket.co',
     'authorSiteName' => "StuntRocket",
-    'packageDocumentationUrl' => 'https://stuntrocket.github.io/GoogleTagManager/',
+    'packageDocumentationUrl' => 'https://stuntrocket.github.io/TweetThisModx/',
     'copyright' => '2016',
 
     /* no need to edit this except to change format */
@@ -161,15 +161,16 @@ $components = array(
     'elements' => array(
 
         'propertySets' => array( /* all three fields are required */
+
         ),
 
         'snippets' => array(
-          'GoogleTagManagerHead_Snp' => array( /* example with static and property set(s)  */
+          'GoogleTagManagerHead' => array( /* example with static and property set(s)  */
               'category' => 'GoogleTagManager',
               'description' => 'Goes inside head tag',
               'static' => false
           ),
-          'GoogleTagManagerBody_Snp' => array( /* example with static and property set(s)  */
+          'GoogleTagManagerBody' => array( /* example with static and property set(s)  */
               'category' => 'GoogleTagManager',
               'description' => 'Goes inside body tag',
               'static' => false
@@ -179,12 +180,12 @@ $components = array(
 
         ),
         'chunks' => array(
-          'GoogleTagManagerHead' => array(
+          'GTMHead' => array(
               'description' => 'Chunk used inside head tag',
               'category' => 'GoogleTagManager',
               'static' => false,
           ),
-            'GoogleTagManagerBody' => array(
+            'GTMBody' => array(
                 'description' => 'Chunk used inside body tag',
                 'category' => 'GoogleTagManager',
                 'static' => false,

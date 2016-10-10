@@ -3,7 +3,7 @@
  * Resolver for GoogleTagManager extra
  *
  * Copyright 2016 by StuntRocket hello@stuntrocket.co
- * Created on 10-09-2016
+ * Created on 10-10-2016
  *
  * GoogleTagManager is free software; you can redistribute it and/or modify it under the
  * terms of the GNU General Public License as published by the Free Software
