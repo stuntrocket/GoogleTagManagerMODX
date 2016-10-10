@@ -1,14 +1,46 @@
 
-GoogleTagManager
 
+# GoogleTagManager Extra for MODx Revolution
 
-Author: StuntRocket hello@stuntrocket.co
-Copyright 2016
+## Easy Install Google Tag Manager Tracking Code
 
-Official Documentation: https://stuntrocket.github.io/TweetThisModx/
+GoogleTagManagerMODX passes control of Google Analytic's tagging operations to non technical MODX website moderators, SEOs and marketers, making it easy to experiment with a range of tags, events, error tracking and more.
 
-Bugs and Feature Requests: https://github.com:StuntRocket/GoogleTagManagerMODX
+## Installation
 
-Questions: http://forums.modx.com
+GoogleTagManagerMODX can be installed via your MODX Package Manager - Search for "GoogleTagManagerMODX" and click "Download" then "Install".
 
-Created by MyComponent
+## Usage
+
+Once GoogleTagManagerMODX is installed there are a few quick, easy things to do.
+
+### Stage 1 - Settings
+
+	- Create a GoogleTagManager Account - https://tagmanager.google.com/
+
+	- Note down your **GTM-ID Container ID** (GTM-XXXXXX).
+
+	- Link your Google Tag Manager account to your Google Analytics account (Instructions - https://support.google.com/analytics/answer/6163791?hl=en).
+
+	- Go to your System Settings in MODX.
+
+	- Select "GoogleTagManager" namespace and look or search for setting google.gtmid.
+
+	- Save google.gtmid setting with your GTM-ID Container ID (GTM-XXXXXX).
+
+### Stage 2 - Snippet Calls
+
+Now we need to add two Snippet calls to every template that we want the GoogleTagManager tags to feature. The reason there are two snippets is because Google Tag Manager offers a "no script" IFrame fallback - its optional if you want to use this second fallback tag but it is recommended.
+
+	- Open/Edit your chosen template(s).
+
+	- Add [[GoogleTagManagerHead]] inside the head tag.
+
+	- Add [[GoogleTagManagerBody]] inside the body tag (No script fallback).
+
+There is much that can be done with Google Tag Manager - be sure to check out the documentation to get the most out of it.
+
+**Author:** StuntRocket hello@stuntrocket.co [StuntRocket](https://stuntrocket.co)
+**MODX Extra** [MODX Extra](https://modx.com/extras/package/googletagmanager)
+**Project Home** [GitHub Pages](https://stuntrocket.github.io/GoogleTagManagerMODX/)
+**Bug Report** [GitHub](https://github.com/stuntrocket/GoogleTagManagerMODX)
