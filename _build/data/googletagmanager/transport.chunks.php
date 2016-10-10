@@ -28,16 +28,20 @@ $chunks = array();
 $chunks[1] = $modx->newObject('modChunk');
 $chunks[1]->fromArray(array (
   'id' => 1,
-  'description' => 'Chunk used inside head tag',
+  'property_preprocess' => false,
   'name' => 'GTMHead',
+  'description' => 'Chunk used inside head tag',
+  'properties' => NULL,
 ), '', true, true);
 $chunks[1]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/gtmhead.chunk.html'));
 
 $chunks[2] = $modx->newObject('modChunk');
 $chunks[2]->fromArray(array (
   'id' => 2,
-  'description' => 'Chunk used inside body tag',
+  'property_preprocess' => false,
   'name' => 'GTMBody',
+  'description' => 'Chunk used inside body tag',
+  'properties' => NULL,
 ), '', true, true);
 $chunks[2]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/gtmbody.chunk.html'));
 

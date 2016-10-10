@@ -28,16 +28,20 @@ $snippets = array();
 $snippets[1] = $modx->newObject('modSnippet');
 $snippets[1]->fromArray(array (
   'id' => 1,
-  'description' => 'Goes inside head tag',
+  'property_preprocess' => false,
   'name' => 'GoogleTagManagerHead',
+  'description' => 'Goes inside head tag',
+  'properties' => NULL,
 ), '', true, true);
 $snippets[1]->setContent(file_get_contents($sources['source_core'] . '/elements/snippets/googletagmanagerhead.snippet.php'));
 
 $snippets[2] = $modx->newObject('modSnippet');
 $snippets[2]->fromArray(array (
   'id' => 2,
-  'description' => 'Goes inside body tag',
+  'property_preprocess' => false,
   'name' => 'GoogleTagManagerBody',
+  'description' => 'Goes inside body tag',
+  'properties' => NULL,
 ), '', true, true);
 $snippets[2]->setContent(file_get_contents($sources['source_core'] . '/elements/snippets/googletagmanagerbody.snippet.php'));
 

@@ -27,22 +27,22 @@ $systemSettings = array();
 
 $systemSettings[1] = $modx->newObject('modSystemSetting');
 $systemSettings[1]->fromArray(array (
-  'key' => 'google.gtmid',
-  'name' => 'GoogleTagManager GTM ID',
-  'description' => 'GTM ID From Google Tag Container Dashboard (GTM-XXXXXX)',
-  'namespace' => 'googletagmanager',
-  'xtype' => 'textfield',
+  'key' => 'google.gtm.exclude.contexts',
   'value' => '',
+  'xtype' => 'textfield',
+  'namespace' => 'googletagmanager',
   'area' => 'area1',
+  'name' => 'GoogleTagManager Exclude Contexts',
+  'description' => 'Exclude Contexts from Google Tag Manager (comma separated)',
 ), '', true, true);
 $systemSettings[2] = $modx->newObject('modSystemSetting');
 $systemSettings[2]->fromArray(array (
-  'key' => 'google.gtm.exclude.contexts',
-  'name' => 'GoogleTagManager Exclude Contexts',
-  'description' => 'Exclude Contexts from Google Tag Manager (comma separated)',
-  'namespace' => 'googletagmanager',
-  'xtype' => 'textfield',
+  'key' => 'google.gtmid',
   'value' => '',
+  'xtype' => 'textfield',
+  'namespace' => 'googletagmanager',
   'area' => 'area1',
+  'name' => 'GoogleTagManager GTM ID',
+  'description' => 'GTM ID From Google Tag Container Dashboard (GTM-XXXXXX)',
 ), '', true, true);
 return $systemSettings;
