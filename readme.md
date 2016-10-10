@@ -14,20 +14,27 @@ Once GoogleTagManagerMODX is installed there are a few quick, easy things to do.
 
 ###Stage 1 - Settings
 
-	Create a [GoogleTagManager Account](https://tagmanager.google.com/?hl=en#/home).
-	Note down your **GTM-ID Container ID** (GTM-XXXXXX).
-	Link your Google Tag Manager account to your Google Analytics account [Instructions](https://support.google.com/analytics/answer/6163791?hl=en).
-	Go to your System Settings in MODX.
-	Select "GoogleTagManager" namespace and look or search for setting google.gtmid.
-	Save google.gtmid setting with your GTM-ID Container ID (GTM-XXXXXX).
+	- Create a [GoogleTagManager Account](https://tagmanager.google.com/?hl=en#/home).
+	
+	- Note down your **GTM-ID Container ID** (GTM-XXXXXX).
+	
+	- Link your Google Tag Manager account to your Google Analytics account [Instructions](https://support.google.com/analytics/answer/6163791?hl=en).
+	
+	- Go to your System Settings in MODX.
+	
+	- Select "GoogleTagManager" namespace and look or search for setting google.gtmid.
+	
+	- Save google.gtmid setting with your GTM-ID Container ID (GTM-XXXXXX).
 	
 ###Stage 2 - Snippet Calls
 
 Now we need to add two Snippet calls to every template that we want the GoogleTagManager tags to feature. The reason there are two snippets is because Google Tag Manager offers a "no script" IFrame fallback - its optional if you want to use this second fallback tag but it is recommended.
 
-	Open/Edit your chosen template(s).
-	Add [[GoogleTagManagerHead]] inside the head tag.
-	Add [[GoogleTagManagerBody]] inside the body tag (No script fallback).
+	- Open/Edit your chosen template(s).
+	
+	- Add [[GoogleTagManagerHead]] inside the head tag.
+	
+	- Add [[GoogleTagManagerBody]] inside the body tag (No script fallback).
 
 There is much that can be done with Google Tag Manager - be sure to check out the documentation to get the most out of it.
 
