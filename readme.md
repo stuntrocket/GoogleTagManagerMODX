@@ -14,11 +14,11 @@ Once GoogleTagManagerMODX is installed there are a few quick, easy things to do.
 
 ###Stage 1 - Settings
 
-	- Create a [GoogleTagManager Account](https://tagmanager.google.com/?hl=en#/home).
+	- Create a GoogleTagManager Account - https://tagmanager.google.com/
 	
 	- Note down your **GTM-ID Container ID** (GTM-XXXXXX).
 	
-	- Link your Google Tag Manager account to your Google Analytics account [Instructions](https://support.google.com/analytics/answer/6163791?hl=en).
+	- Link your Google Tag Manager account to your Google Analytics account (Instructions - https://support.google.com/analytics/answer/6163791?hl=en).
 	
 	- Go to your System Settings in MODX.
 	
